@@ -1,0 +1,39 @@
+class QueueAsLinkedList {
+    Node front,rear;
+
+    public QueueAsLinkedList() {
+        this.front = null;
+        this.rear = null;
+    }
+
+    
+
+    public void enqueue(Student data) {
+        Node temp = new Node(data);
+        if (this.rear==null) {
+            front = rear=temp;
+            return;
+        } 
+        rear.next = temp;
+        rear = temp;
+        
+    }
+
+    public void dequeue() {
+        if (this.front==null) {
+            return;
+        }
+        Node temp=front;
+        front = front.next;
+        if (front == null) {
+            rear = null;
+        }
+        
+    }
+
+    
+}
+
+
+
+
