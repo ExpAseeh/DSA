@@ -19,7 +19,7 @@ public class run {
 
         switch (ch) {
             case "1":
-                
+                arr.printTest();
                 break;
             case "2":
             x.print("Teacher");
