@@ -28,7 +28,6 @@ public class Queue {
         else{
             for(int i=0;i<rear;i++){
                 queueList[i]=queueList[i+1];
-
             }
         }
         
@@ -39,14 +38,14 @@ public class Queue {
         return;
     }
 
-    void Display(){
+    void display(){
         int i;
         if (front==rear){
             System.out.println("Queue is Empty");
             return;
         }
         for(i=front;i<rear;i++){
-            System.out.println("ID : "+queueList[i].getId()+"Name : "+queueList[i].getName());
+            System.out.println("ID : "+queueList[i].getId()+"\nName : "+queueList[i].getName());
         }
         return;
     }
